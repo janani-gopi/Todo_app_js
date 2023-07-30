@@ -39,6 +39,10 @@ p{
     border-radius: .3rem;
 
 }
+input{
+    appearance: none;
+    outline: none;
+}
 button{
     border: none;
     padding:.5rem;
