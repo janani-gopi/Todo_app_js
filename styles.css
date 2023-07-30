@@ -1,0 +1,85 @@
+body{
+    background-color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: rgb(110, 85, 52);
+}
+
+p{
+    text-align: left;
+}
+
+.container{ 
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+    padding: 4rem;
+}
+.alltodo{
+    height: 70vh;
+    width:80%;
+    margin: 0 auto;
+}
+.todo{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    color: rgb(110, 85, 52);
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem;
+}
+
+.input{
+    width: 70%;
+    padding: .7rem;
+    border: none;
+    border-radius: .3rem;
+
+}
+button{
+    border: none;
+    padding:.5rem;
+}
+div{
+    margin: .6rem;
+}
+i.fa-check-square {
+    display: none;
+}
+i{
+    margin: .4rem;
+    cursor: pointer;
+}
+.todo.done i.fa-check-square {
+    flex-grow: 0;
+    cursor: pointer;
+    color: #28a745;
+    display: block;
+}
+ 
+.todo.done i.fa-square {
+    display: none;
+}
+ 
+.todo.done .todo-text {
+    text-decoration: line-through;
+    color: #888;
+}
+@media  screen and (max-width:600px) {
+    .container{
+        width: 90%;
+        padding: 1rem;
+    }
+}
+@media  screen and (max-width:330px) {
+    .container{
+        width: 100%;
+        padding: .5rem;
+    }
+    .alltodo{
+        width: 100%;
+    }
+}
